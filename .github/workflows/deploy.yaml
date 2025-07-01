@@ -15,10 +15,10 @@ jobs:
       id-token: write
     steps:
       - name: checkout the repo
-        uses: action/checkout@v4
+        uses: actions/checkout@v4
 
       - name: log in to docker hub
-        uses: docker/login-action@v3
+        uses: docker/login-actions@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
