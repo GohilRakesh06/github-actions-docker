@@ -29,4 +29,8 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: rakesh9711/app:latest
+          tags: |
+            rakesh9711/app:${{ github.ref_name }} 
+            rakesh9711/app:latest
+
+
